@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Vijay Krishna S</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">about</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#project">project</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="humburger-nav">
+        <div class="logo">JOhn doe</div>
+        <div class="humburger-menu">
+            <div class="humburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+            <div class="menulinks">
+                <li><a href="#about" onclick="toggleMenu()" >about</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()"  >project</a></li>
+                <li><a href="#project" onclick="toggleMenu()" >project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()" onclick="toggleMenu()" >contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="img">
+            <img src="./images/orignanl dp (1) (1).jpg" >
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello,I'm</p>
+            <h1 class="title">Vijay Krishna</h1>
+            <p class="section-text-p2">Student</p>
+            <div class="btn-container">
+                <button class="contactinfo" onclick="location.href='./#contact'">contact info</button>
+                <button class="Download-CV" onclick="window.open('./images/Data science AI and ML Marketing.jpg')">Download CV</button>
+            </div>
+           <div id="social-container">
+            <img src="./images/icons8-linkedin-48.png" alt="my linkdnn profile"
+            class="icon" onclick="location.href='https://linkedin.com/'"/>
+            <img src="./images/icons8-whatsapp-48.png" alt="my whatsapp profile"
+            class="icon" onclick="location.href='https://wa.me/qr/DX6AJLDNSYCUE1/'"/>
+           </div>
+        </div>
+    </section>
+    <section id="about">
+       
+        <p class="knowmore">Get to know more</p>
+        <h1 class="aboutme">About Me</h1>
+        
+    <div id="container">
+        <div class="image">
+            <img src="./images/Untitled design (3).png" />
+        </div>
+        <div class="maintext-container">
+            <h1 class="name">VIJAY KRISHNA</h1>
+            <p class="maintext">
+                Hey there! I'm vijay, a creative enthusiast with a passion for all things design. Whether it's crafting sleek UI interfaces or dreaming up innovative concepts, I thrive in the world of creativity. When I'm not immersed in design projects, you can find me on the football field, where I channel my energy and competitive spirit.
+
+I've had the privilege of honing my skills through diverse experiences, including an enriching internship in UI design and my current role as a Junior Executive at Tensor PR Team. These opportunities have not only expanded my knowledge but also fueled my enthusiasm for the dynamic landscape of website design and development.
+
+Driven by a blend of creativity and determination, I am dedicated to bringing ideas to life through both design and code. With a cool demeanor and a relentless pursuit of excellence, I'm ready to tackle any challenge that comes my way.
+            </p>
+            <p class="insta" href="https://www.instagram.com/?utm_source=pwa_homescreen&__pwa=1">Instagram</p>
+            <p class="fb" href="www.facebook.com">Facebook</p>
+        </div>
+    </div>
+
+    </section>
+   
+
+    <section id="contact">
+        <div class="container">
+            <h1>Contact Me</h1>
+            <p class="text">
+                I am available for work.Contact me via phone 8943687489 or email vijay762005@gmail.com
+            </p>
+            <form action="submit_form.php" method="post">
+              <div>
+              <input type="text" placeholder="Name" class="inpt1" required>
+              </div>
+              <div>
+              <input type="email" placeholder="Email" required>
+              </div>
+              <div>
+              <textarea id="message" name="message" placeholder="Write the subject" required></textarea>
+              </div>
+              <button type="submit" class="btn-submit">Submit</button>
+            </form>
+          </div>
+          <div class="phone-image"> 
+            <img src="./images/phone-1439840_640.png" class="contactimage">
+          </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

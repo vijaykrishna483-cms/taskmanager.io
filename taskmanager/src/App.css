@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fedddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.thebox {
+  background:transparent;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  height:auto;
+  justify-content:first baseline;
+  align-items: baseline;
+}
+
+.TodoForm {
+  width: 100%;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 300px;
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.55rem;
+  cursor: pointer;
+  height:38px;
+}
+.todo-container{
+  background: #1a1a40;
+  border: 1px solid #000000;
+  width:440px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.in-progress-container{
+  background: #1a1a40;
+  width: 440px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+.completed-container{
+  background: #1a1a40;
+  width: 440px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.Todo {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  border:2px solid #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  width:400px ;
+  height:100px;
+  margin-left:20px;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted {
+  color: #fff;
+  cursor: pointer;
+}
+
+.completed {
+  color: #4800ff;
+  text-decoration: line-through;
+  cursor: pointer;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+
+h2{
+  color: white;
+  margin-top: 20px;
+  font-weight: lighter;
+}
+
+.header{
+  margin-top: 30px;
+}
+
+.header-text{
+  color: #1a1a40;
+}
